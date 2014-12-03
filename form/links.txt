@@ -1,0 +1,5 @@
+http://www.javascript-coder.com/html-form/html-form-tutorial-p1.phtml
+
+http://www.w3schools.com/tags/tag_input.asp
+
+http://www.w3schools.com/tags/tag_form.asp

@@ -120,6 +120,25 @@ main {
 }
 
 
+/* Content */
+
+main .teiler {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	color: #000;
+}
+
+main .teiler a {
+	text-decoration: none;
+}
+
+main .blau {background-color:#00a0ca; color: #FFF;}
+main .lila {background-color:#7a4292; color: #FFF;}
+main .orange {background-color:#d65714; color: #FFF;}
+main .grün {background-color:#b2cc23; color: #FFF;}
+
+
 /* Shop */
 
 .item {

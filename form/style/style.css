@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Basic Stuff */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	line-height: 130%;
+}
+
+*::selection {
+  background: #de006e;
+}
+
+*::-moz-selection {
+  background: #de006e;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	color: #000;
+}
+
+.container {
+	width: 740px;
+	margin: 0px auto;
+	padding: 0px 30px;
+	position: relative;
+}
+
+.pinkdot {
+	color: #de006e;
+	font-size: 100px;
+	line-height: 12px;
+	vertical-align: baseline;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #de006e;
+}
+
+.current {
+	color: #de006e;
+	text-decoration: none;
+}
+
+.current:hover {
+	text-decoration: underline;
+}
+
+
+/* Header und alles drin */
+
+#header {
+	height: auto;
+	width: 100%;
+	padding: 20px 0px;
+	background-color: #000;
+}
+
+#follow {
+	position: absolute;
+	bottom: -8px;
+	right: 30px;
+	font-size: 40px;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#follow a div {
+	width: 45px;
+	height: 31px;
+	float: right;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#follow a #fb {
+	width: 30px;
+	background-image: url(../img/facebook-white.png)
+}
+
+#follow a #fb:hover {
+	background-image: url(../img/facebook-pink.png)
+}
+
+#follow a #twitter {
+	background-image: url(../img/twitter-white.png)
+}
+
+#follow a #twitter:hover {
+	background-image: url(../img/twitter-pink.png)
+}
+
+#follow a #youtube {
+	background-image: url(../img/youtube-white.png)
+}
+
+#follow a #youtube:hover {
+	background-image: url(../img/youtube-pink.png)
+}
+
+
+/* Navi */
+
+#navi {
+	position: fixed;
+	top: 227px;
+	left: 0px;
+	/* border: 1px solid #de006e; */
+	border-left: 0px;
+	color: #FFF;
+}
+
+#navi a {
+	text-decoration: none;
+}
+
+#navi ul a li {
+	display:block;
+	background-color: #000;
+	padding: 10px 0px 8px 10px;
+	margin-bottom: 1px;
+	width: 85px;
+}
+
+#navi ul a:last-child li {
+	margin-bottom: 0px;
+}
+
+#navi ul a:hover li {
+	border-left: 5px solid #de006e;
+	width: 80px;
+}
+
+
+/* Content */
+
+#content {
+	padding-top: 10px;
+}
+
+#breadcrumbs {
+	font-size: 11px;
+}
+
+#breadcrumbs a {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+#content .pinkdot {
+	margin-left: -30px;
+}
+
+.headline {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#firsthead {
+	margin-top: 20px;
+}
+
+h1 {
+	font-size: inherit;
+	font-family: inherit;
+	line-height: inherit;
+	margin: inherit;
+	padding: inherit;
+	display: inline;
+	font-weight: inherit;
+}
+
+h1 a {
+	text-decoration:none;
+}
+
+.normaltext {
+	float: left;
+	width: 232px;
+	margin-right: 22px;
+}
+
+.imgright {
+	float: left;
+	width: 232px;
+}
+
+
+/* Große Bilder */
+
+.fullpic {
+	height: 350px;
+	background-color: #000;
+	width: 100%;
+	background-image: no-repeat 50% 50% fixed; 
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.fullpic .beschreibung {
+	position: absolute;
+	top: 20px;
+	padding: 10px;
+	background-color:rgba(000,000,000,0.9);
+	width: 200px;
+	color: #FFF;
+}
+
+#skate {
+	background-image: url(../img/full-skate.jpg);
+}
+
+#surf {
+	background-image: url(../img/full-surf.jpg);
+}
+
+#snow {
+	background-image: url(../img/full-snow.jpg);
+}
+
+
+/* Footer */
+
+#footer {
+	margin-top: 50px;
+	width: 100%;
+	background-color: #000;
+	font-size: 11px;
+	text-align: center;
+	color: #FFF;
+	padding: 15px 0px;
+}
+
+#footer img {
+	margin-bottom: 10px;
+}
+
+
+/* Shop */
+
+.produktcont {
+	float: left;
+	height: 210px;
+	width: 210px;
+	margin: 22px 22px 0px 0px;
+	border: 1px solid #000;
+	padding: 10px;
+}
+
+.produkt {
+	width: 190px;
+	height: 190px;
+	background-color: #000;
+	padding: 10px;
+	position: relative;
+}
+
+.produktname {
+	background-color: rgba(0,0,0,0.9);
+	color: #FFF;
+	font-size: 24px;
+	padding: 3px 6px;
+	font-weight: bold;
+}
+
+.produktcont:hover .produkt .produktname {
+	color: #de006e;
+}
+
+.produktkosten {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.9);
+	padding: 3px 6px;
+	color: #FFF;
+}
+
+
+/* Formular */
+
+.formular {
+	width: 100%;
+	height: auto;
+}
+
+.formular br {
+	clear:both;
+}
+
+.formular label {
+	display: block;
+	float: left;
+	width: 232px;
+	margin: 20px 22px 5px 0px;
+	font-size: 12px;
+}
+
+.feld {
+	float: left;
+	margin: 0px 22px 0px 0px;
+	width: 224px;
+	height: 20px;
+	border: 1px solid #000;
+	padding: 0px 2px 0px 4px;
+}
+
+.submit {
+	background-color: #de006e;
+	color: #FFF;
+	padding: 2px;
+	border: 0px;
+	width: 232px;
+	height: auto;
+	margin-top: 20px;
+}
+
+.submit:hover {
+	background-color: 
+}
+
+.reset {
+	background-color: #999;
+	color: #FFF;
+	padding: 2px;
+	border: 0px;
+	width: 232px;
+	height: auto;
+	margin-top: 20px;
+}
+
+
+/* About us */
+
+.typ {
+	width: 232px;
+	height: 232px;
+	float:left;
+	overflow: hidden;
+	background-color: #000;
+	margin: 0px 22px 22px 0px;
+	position: relative;
+}
+
+.typname {
+	width: 100%;
+	position: absolute;
+	bottom: -61px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.9);
+	transition: bottom 0.2s ease;
+	-webkit-transition: bottom 0.2s ease;
+	-moz-transition: bottom 0.2s ease;
+	-o-transition: bottom 0.2s ease;
+}
+
+.typ .typname p {
+	margin: 10px 0px 0px 0px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFF;
+}
+
+.typ:hover .typname {
+	bottom: 0px;
+	color: #de006e;
+}
